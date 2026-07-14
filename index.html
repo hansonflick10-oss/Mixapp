@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PulseMix | DJ Mixes & Downloads</title>
+    <meta name="description" content="A modern site for DJ mixes, featured releases, and easy downloads." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <a class="brand" href="#">PulseMix</a>
+        <div class="nav-links">
+          <a href="#featured">Featured</a>
+          <a href="#upload">Upload</a>
+          <a href="#downloads">Downloads</a>
+        </div>
+      </nav>
+
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">New drop • weekly mixes</p>
+          <h1>Upload your sound. Let the crowd download it.</h1>
+          <p class="hero-text">
+            A polished place for a DJ to showcase mixes, share new sets, and let listeners download tracks instantly.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#downloads">Browse Mixes</a>
+            <a class="btn btn-secondary" href="#upload">Share a Mix</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Now Streaming</h3>
+          <p>Midnight Session • 58 min</p>
+          <div class="wave"></div>
+          <div class="wave wave-2"></div>
+          <div class="wave wave-3"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="featured" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured</p>
+          <h2>Fresh mixes curated for the weekend</h2>
+        </div>
+        <div class="card-grid">
+          <article class="mix-card">
+            <h3>Deep House Sunset</h3>
+            <p>Warm grooves, emotional transitions, and late-night vibes.</p>
+            <a href="#downloads" class="card-link">Download Mix</a>
+          </article>
+          <article class="mix-card">
+            <h3>Afterglow Set</h3>
+            <p>High-energy club edits mixed for the peak hour.</p>
+            <a href="#downloads" class="card-link">Download Mix</a>
+          </article>
+          <article class="mix-card">
+            <h3>Lo-Fi Rooftop</h3>
+            <p>Chill textures, jazzy breaks, and soft percussion.</p>
+            <a href="#downloads" class="card-link">Download Mix</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="upload" class="section upload-section">
+        <div class="section-heading">
+          <p class="eyebrow">Upload</p>
+          <h2>Share your latest mix with your audience</h2>
+        </div>
+        <form class="upload-form">
+          <label>
+            Mix title
+            <input type="text" placeholder="Summer Rooftop Mix" />
+          </label>
+          <label>
+            Description
+            <textarea rows="4" placeholder="Tell listeners what to expect from this set..."></textarea>
+          </label>
+          <label>
+            Choose file
+            <input type="file" accept="audio/*" />
+          </label>
+          <button type="submit" class="btn btn-primary">Publish Mix</button>
+        </form>
+      </section>
+
+      <section id="downloads" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Downloads</p>
+          <h2>Library of mixes ready to stream or save</h2>
+        </div>
+        <div class="download-list">
+          <div class="download-item">
+            <div>
+              <h3>Neon Nights</h3>
+              <p>Electro house • 72 MB</p>
+            </div>
+            <a class="btn btn-secondary" href="#">Download</a>
+          </div>
+          <div class="download-item">
+            <div>
+              <h3>Golden Hour</h3>
+              <p>House • 54 MB</p>
+            </div>
+            <a class="btn btn-secondary" href="#">Download</a>
+          </div>
+          <div class="download-item">
+            <div>
+              <h3>Velvet Bassline</h3>
+              <p>Techno • 88 MB</p>
+            </div>
+            <a class="btn btn-secondary" href="#">Download</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
